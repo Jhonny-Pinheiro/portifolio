@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+
+    <title>Cervejaria do Pericles</title>
+
+    <link href="style2.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="img/image 3.svg">
+        </div>
+
+        <div class="boavindas">
+            Bem-vindo, a Cervejaria do<br>
+            Pericles!
+        </div>
+
+        <div id="card">
+            Digite seu nome<br>
+            <input type="form" class="formulario" id="nome" required><br><br>
+            Coloque sua idade<br>
+            <input type="number" class="formulario" id="idade" required>
+        </div>
+
+        <div>
+            <input type="button" value="Entrar no Site" id="botao1" class="botao" onclick="registro()"><br><br>
+            <a href="index.html"><input type="button" value="Voltar Portifólio" id="botao2" class="botao"></a>
+        </div>
+    </div>   
+</body>
+
+<script>
+    function registro(){
+        //window.alert('Essa página é apenas para maiores de 18 anos! Continue apenas se for maior de idade.');
+        var nome = window.document.getElementById("nome")
+        var n = String(nome.value)
+        var idade = window.document.getElementById("idade")
+        var i = Number(idade.value)
+        if (i >= 18){
+            card.innerText = "Olá, "+ n + "! Gostaria de te dar boas vindas a Taverna do Pericles. Aqui você encontrará as melhores bebidas do Brasil!"
+            botao1.value = "Obrigado"
+        }else{
+            card.innerText = "Sinto muito, mas este site só é permitido para maiores de 18 anos."
+            botao1.value = "Obrigado"
+        }
+    }
+</script>
+
+</html>

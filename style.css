@@ -1,0 +1,52 @@
+/* Comentário no css é assim */
+#header {
+    background-color: rgba(37, 37, 238, 0.76);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Hubballi', cursive;
+}
+#nameAndTitle {
+    background-color: white;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+#nameAndTitle h1, h2{
+    margin: 0;
+}
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+#contact {
+    list-style-type: none;
+}
+#contact i {
+    width: 30px;
+    color:rgba(37, 37, 238, 0.76)
+}
+#links {
+    list-style-type: none;
+}
+#links i {
+    width: 30px;
+    color:rgba(37, 37, 238, 0.76)
+}
+#container {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-column-gap: 20px;
+}
+#sidebar, #content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.card h3{
+    font-family: 'Hubballi', cursive;
+}
+.card {
+    font-family: Montserrat;
+    border:1px solid rgb(194, 192, 192);
+    border-radius: 15px;
+    padding: 20px;
+}
