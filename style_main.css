@@ -7,6 +7,12 @@ body {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
 }
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 #header {
     font-family: Poppins;
     font-style: normal;
@@ -53,8 +59,8 @@ a {
    text-align: center;
    color: #FFFFFF;
    padding: 10px 25px 10px 25px;
-
 }
+
 p.gray {
     font-family: Poppins;
     font-style: normal;
@@ -84,7 +90,7 @@ p.gray {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#linkedin, #insta, #face, #whats {
+#linkedin, #insta, #face, #whats, #git {
     font-size: 200%;
 }
 #headerClientText {
@@ -165,6 +171,7 @@ h1.black {
 }
 .portifolioImg img {
     width: 100%;
+    border-radius: 30px;
 }
 .portifolioImg {
     padding: 20px;
